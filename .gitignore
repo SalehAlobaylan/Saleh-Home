@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+.obsidian/workspace*.json
+.obsidian/cache/
+.trash/
+/knowledge-vault/
+/knowledge-web/
+/.setup.*/

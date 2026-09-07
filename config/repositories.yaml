@@ -1,0 +1,31 @@
+# Intended roles/visibility. These values do not configure or verify GitHub permissions.
+repositories:
+  saleh-home:
+    repository: SalehAlobaylan/Saleh-Home
+    role: workspace-control
+    current_visibility: private
+    intended_visibility: private
+    note: The empty GitHub repository is private; no workspace files have been pushed yet.
+    local_path: .
+  github-profile:
+    repository: SalehAlobaylan/SalehAlobaylan
+    role: public-identity
+    intended_visibility: public
+  salehspace:
+    repository: SalehAlobaylan/salehspace
+    role: personal-website
+    intended_visibility: public
+  knowledge-vault:
+    repository: null
+    role: knowledge-source
+    intended_visibility: private
+    local_path: knowledge-vault
+  knowledge-web:
+    repository: null
+    role: knowledge-publisher
+    intended_visibility: public
+    local_path: knowledge-web
+  personal-docs:
+    repository: null
+    role: documentation
+    intended_visibility: private

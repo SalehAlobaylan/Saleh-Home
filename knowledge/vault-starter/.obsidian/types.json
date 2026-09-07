@@ -1,0 +1,10 @@
+{
+  "types": {
+    "type": "text",
+    "status": "text",
+    "visibility": "text",
+    "created": "date",
+    "updated": "date",
+    "tags": "tags"
+  }
+}

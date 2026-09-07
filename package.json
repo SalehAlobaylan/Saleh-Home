@@ -1,0 +1,1 @@
+{"name":"saleh-home","private":true,"type":"module","scripts":{"test":"node --test scripts/export-public.test.mjs scripts/setup.test.mjs","export":"node scripts/export-public.mjs","build":"node scripts/build.mjs"},"dependencies":{"js-yaml":"4.3.2","remark-parse":"11.0.0","unified":"11.0.5","unist-util-visit":"5.1.0"},"engines":{"node":">=22"}}
