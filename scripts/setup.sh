@@ -53,7 +53,7 @@ for LEGACY in "$ROOT/knowledge-vault" "$ROOT/knowledge-web"; do
   fi
 done
 
-# Registered submodules (salehspace, github-profile). Safe to init/update:
+# Registered submodules (salehspace, salehalobaylan). Safe to init/update:
 # git never overwrites uncommitted work in submodules during update --init.
 if [ -f "$ROOT/.gitmodules" ]; then
   git -C "$ROOT" submodule sync --recursive

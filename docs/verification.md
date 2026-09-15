@@ -14,7 +14,7 @@ git remote -v
 Expected:
 
 - `repos/salehspace` → `SalehAlobaylan/salehspace`, branch `main`
-- `repos/github-profile` → `SalehAlobaylan/SalehAlobaylan`, branch `main`
+- `repos/salehalobaylan` → `SalehAlobaylan/SalehAlobaylan`, branch `main`
 - `repos/knowledge-vault`, `repos/knowledge-web`, `repos/personal-docs` are
   registered submodules with private/personal remotes (see `docs/repository-map.md`).
   Never fabricate URLs for future additions.

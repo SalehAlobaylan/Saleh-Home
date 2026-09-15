@@ -14,7 +14,7 @@ ONE PLACE TO ENTER — MULTIPLE INDEPENDENT REPOSITORIES — ONE SHARED AGENT CO
 ```text
 Saleh-Home/
 ├── repos/salehspace       → personal website (public submodule)
-├── repos/github-profile   → GitHub profile (public submodule)
+├── repos/salehalobaylan     → GitHub profile (public submodule)
 ├── repos/knowledge-vault  → private Obsidian source (private submodule)
 ├── repos/knowledge-web    → public knowledge publisher (submodule, private until deployment)
 └── repos/personal-docs    → private professional docs (private submodule)

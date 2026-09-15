@@ -81,7 +81,7 @@ report_repo() {
 
 report_repo "saleh-home" "$ROOT"
 report_repo "salehspace" "$ROOT/repos/salehspace"
-report_repo "github-profile" "$ROOT/repos/github-profile"
+report_repo "salehalobaylan" "$ROOT/repos/salehalobaylan"
 report_repo "knowledge-vault" "$ROOT/repos/knowledge-vault"
 report_repo "knowledge-web" "$ROOT/repos/knowledge-web"
 report_repo "personal-docs" "$ROOT/repos/personal-docs"

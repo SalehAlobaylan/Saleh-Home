@@ -2,8 +2,8 @@
 	path = repos/salehspace
 	url = git@github.com:SalehAlobaylan/salehspace.git
 	branch = main
-[submodule "repos/github-profile"]
-	path = repos/github-profile
+[submodule "repos/salehalobaylan"]
+	path = repos/salehalobaylan
 	url = git@github.com:SalehAlobaylan/SalehAlobaylan.git
 	branch = main
 [submodule "repos/knowledge-vault"]

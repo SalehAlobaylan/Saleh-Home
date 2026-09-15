@@ -9,7 +9,7 @@ node_modules/
 .trash/
 /.setup.*/
 # Submodule paths under repos/ are intentionally tracked as gitlinks.
-# Do not ignore repos/salehspace, repos/github-profile,
+# Do not ignore repos/salehspace, repos/salehalobaylan,
 # repos/knowledge-vault, repos/knowledge-web, or repos/personal-docs.
 # Pending local-only repos (vault/web/docs without remotes yet) are
 # reported by scripts/status.sh; their file contents must never be

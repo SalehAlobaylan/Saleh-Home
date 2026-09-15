@@ -11,7 +11,7 @@ submodules awaiting remotes).
 repos/salehspace
     personal website (SalehAlobaylan/salehspace, public submodule, branch main)
 
-repos/github-profile
+repos/salehalobaylan
     GitHub profile (SalehAlobaylan/SalehAlobaylan, public submodule, branch main)
     Special profile repo — must remain independent, never merge into Saleh-Home.
 

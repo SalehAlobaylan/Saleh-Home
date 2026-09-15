@@ -11,16 +11,16 @@ test('repository registry reflects the submodule workspace', async () => {
   const text = await fs.readFile(path.join(root, 'config/repositories.yaml'), 'utf8')
   const data = yaml.load(text)
   const repos = data.repositories
-  for (const key of ['saleh-home', 'salehspace', 'github-profile', 'knowledge-vault', 'knowledge-web', 'personal-docs']) {
+  for (const key of ['saleh-home', 'salehspace', 'salehalobaylan', 'knowledge-vault', 'knowledge-web', 'personal-docs']) {
     assert.ok(repos[key], `missing registry entry: ${key}`)
   }
   assert.equal(repos.salehspace.local_path, 'repos/salehspace')
-  assert.equal(repos['github-profile'].local_path, 'repos/github-profile')
+  assert.equal(repos['salehalobaylan'].local_path, 'repos/salehalobaylan')
   assert.equal(repos['knowledge-vault'].local_path, 'repos/knowledge-vault')
   assert.equal(repos['knowledge-web'].local_path, 'repos/knowledge-web')
   assert.equal(repos['personal-docs'].local_path, 'repos/personal-docs')
   assert.equal(repos.salehspace.submodule, true)
-  assert.equal(repos['github-profile'].submodule, true)
+  assert.equal(repos['salehalobaylan'].submodule, true)
   assert.equal(repos['knowledge-vault'].submodule, true)
   assert.equal(repos['knowledge-web'].submodule, true)
   assert.equal(repos['personal-docs'].submodule, true)
@@ -34,7 +34,7 @@ test('repository registry reflects the submodule workspace', async () => {
 
 test('.gitmodules tracks all workspace remotes; .gitignore keeps submodule paths visible', async () => {
   const modules = await fs.readFile(path.join(root, '.gitmodules'), 'utf8')
-  for (const [p, r] of [['repos/salehspace', 'SalehAlobaylan/salehspace'], ['repos/github-profile', 'SalehAlobaylan/SalehAlobaylan'], ['repos/knowledge-vault', 'SalehAlobaylan/knowledge-vault'], ['repos/knowledge-web', 'SalehAlobaylan/knowledge-web'], ['repos/personal-docs', 'SalehAlobaylan/personal-docs']]) {
+  for (const [p, r] of [['repos/salehspace', 'SalehAlobaylan/salehspace'], ['repos/salehalobaylan', 'SalehAlobaylan/SalehAlobaylan'], ['repos/knowledge-vault', 'SalehAlobaylan/knowledge-vault'], ['repos/knowledge-web', 'SalehAlobaylan/knowledge-web'], ['repos/personal-docs', 'SalehAlobaylan/personal-docs']]) {
     assert.ok(modules.includes(p), `missing submodule path: ${p}`)
     assert.ok(modules.includes(r), `missing submodule remote: ${r}`)
   }

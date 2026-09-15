@@ -9,7 +9,7 @@ tracks which commit of each repository constitutes the current workspace snapsho
 Saleh-Home (private superproject)
 │
 ├── repos/salehspace       → SalehAlobaylan/salehspace (public website, submodule)
-├── repos/github-profile   → SalehAlobaylan/SalehAlobaylan (public identity, submodule)
+├── repos/salehalobaylan     → SalehAlobaylan/SalehAlobaylan (public identity, submodule)
 ├── repos/knowledge-vault  → private Obsidian source (independent repo, remote pending)
 ├── repos/knowledge-web    → knowledge publisher (independent repo, remote pending)
 └── repos/personal-docs    → private professional docs (independent repo, remote pending)

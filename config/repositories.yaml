@@ -20,11 +20,11 @@ repositories:
     submodule: true
     branch: main
 
-  github-profile:
+  salehalobaylan:
     repository: SalehAlobaylan/SalehAlobaylan
     role: public-identity
     visibility: public
-    local_path: repos/github-profile
+    local_path: repos/salehalobaylan
     submodule: true
     branch: main
     note: Special GitHub profile repository. Must remain independent; never merge into Saleh-Home.

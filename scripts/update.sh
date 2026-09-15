@@ -49,7 +49,7 @@ report() {
 
 report "$ROOT" "saleh-home"
 report "$ROOT/repos/salehspace" "salehspace"
-report "$ROOT/repos/github-profile" "github-profile"
+report "$ROOT/repos/salehalobaylan" "salehalobaylan"
 report "$ROOT/repos/knowledge-vault" "knowledge-vault"
 report "$ROOT/repos/knowledge-web" "knowledge-web"
 report "$ROOT/repos/personal-docs" "personal-docs"

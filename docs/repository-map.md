@@ -8,7 +8,7 @@ or verify GitHub permissions and must never be used as a publishing gate.
 | --- | --- | --- |
 | SalehAlobaylan/Saleh-Home | Personal workspace superproject (private) | Current directory; submodule pointers + docs + tooling |
 | SalehAlobaylan/salehspace | Personal website (public) | `repos/salehspace`, Git submodule, branch `main` |
-| SalehAlobaylan/SalehAlobaylan | GitHub profile (public) | `repos/github-profile`, Git submodule, branch `main` |
+| SalehAlobaylan/SalehAlobaylan | GitHub profile (public) | `repos/salehalobaylan`, Git submodule, branch `main` |
 | knowledge-vault | Private Obsidian authoring source | `repos/knowledge-vault`, Git submodule, branch `main`, private remote |
 | knowledge-web | Public knowledge publisher (Quartz) | `repos/knowledge-web`, Git submodule, branch `main`; personal origin + upstream `jackyzha0/quartz` |
 | personal-docs | Private professional docs | `repos/personal-docs`, Git submodule, branch `main`, private remote |
