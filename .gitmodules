@@ -1,0 +1,20 @@
+[submodule "repos/salehspace"]
+	path = repos/salehspace
+	url = git@github.com:SalehAlobaylan/salehspace.git
+	branch = main
+[submodule "repos/github-profile"]
+	path = repos/github-profile
+	url = git@github.com:SalehAlobaylan/SalehAlobaylan.git
+	branch = main
+[submodule "repos/knowledge-vault"]
+	path = repos/knowledge-vault
+	url = git@github.com:SalehAlobaylan/knowledge-vault.git
+	branch = main
+[submodule "repos/personal-docs"]
+	path = repos/personal-docs
+	url = git@github.com:SalehAlobaylan/personal-docs.git
+	branch = main
+[submodule "repos/knowledge-web"]
+	path = repos/knowledge-web
+	url = git@github.com:SalehAlobaylan/knowledge-web.git
+	branch = main

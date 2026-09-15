@@ -1,0 +1,12 @@
+{
+  "folders": [
+    { "path": "." },
+    { "path": "repos/salehspace" },
+    { "path": "repos/github-profile" },
+    { "path": "repos/knowledge-vault" },
+    { "path": "repos/knowledge-web" },
+    { "path": "repos/personal-docs" }
+  ],
+  "settings": {},
+  "extensions": {}
+}

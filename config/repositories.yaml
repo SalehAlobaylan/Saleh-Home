@@ -1,31 +1,58 @@
-# Intended roles/visibility. These values do not configure or verify GitHub permissions.
+# Registry of the Saleh-Home workspace.
+# These values document reality and intent. They do not configure or verify
+# GitHub permissions, and MUST NOT be used as a publishing security mechanism.
+# The export gate in scripts/export-public.mjs is the security boundary.
 repositories:
+
   saleh-home:
     repository: SalehAlobaylan/Saleh-Home
-    role: workspace-control
-    current_visibility: private
-    intended_visibility: private
-    note: The empty GitHub repository is private; no workspace files have been pushed yet.
+    role: personal-workspace
+    visibility: private
     local_path: .
-  github-profile:
-    repository: SalehAlobaylan/SalehAlobaylan
-    role: public-identity
-    intended_visibility: public
+    submodule: false
+    note: Private Git superproject. Tracks submodule pointers, workspace docs, and publishing orchestration.
+
   salehspace:
     repository: SalehAlobaylan/salehspace
     role: personal-website
-    intended_visibility: public
+    visibility: public
+    local_path: repos/salehspace
+    submodule: true
+    branch: main
+
+  github-profile:
+    repository: SalehAlobaylan/SalehAlobaylan
+    role: public-identity
+    visibility: public
+    local_path: repos/github-profile
+    submodule: true
+    branch: main
+    note: Special GitHub profile repository. Must remain independent; never merge into Saleh-Home.
+
   knowledge-vault:
-    repository: null
+    repository: SalehAlobaylan/knowledge-vault
     role: knowledge-source
-    intended_visibility: private
-    local_path: knowledge-vault
+    visibility: private
+    local_path: repos/knowledge-vault
+    submodule: true
+    branch: main
+    note: Canonical private Obsidian source.
+
   knowledge-web:
-    repository: null
+    repository: SalehAlobaylan/knowledge-web
     role: knowledge-publisher
-    intended_visibility: public
-    local_path: knowledge-web
+    visibility: private
+    intended_visibility: public-eventually
+    local_path: repos/knowledge-web
+    submodule: true
+    branch: main
+    note: Quartz publisher. Upstream is jackyzha0/quartz. Keep private until public deployment is ready.
+
   personal-docs:
-    repository: null
-    role: documentation
-    intended_visibility: private
+    repository: SalehAlobaylan/personal-docs
+    role: personal-documentation
+    visibility: private
+    local_path: repos/personal-docs
+    submodule: true
+    branch: main
+    note: Private professional docs.

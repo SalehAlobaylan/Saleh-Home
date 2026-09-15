@@ -7,8 +7,8 @@ import remarkParse from 'remark-parse'
 import { visit } from 'unist-util-visit'
 
 const repositoryRoot = fileURLToPath(new URL('../', import.meta.url))
-const defaultSource = path.join(repositoryRoot, 'knowledge-vault')
-const defaultOutput = path.join(repositoryRoot, 'knowledge-web', 'content')
+const defaultSource = path.join(repositoryRoot, 'repos', 'knowledge-vault')
+const defaultOutput = path.join(repositoryRoot, 'repos', 'knowledge-web', 'content')
 
 // Deliberately conservative: v1 publishes Markdown only, never vault assets or HTML.
 export async function exportPublic(source, output) {

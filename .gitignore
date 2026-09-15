@@ -7,6 +7,10 @@ node_modules/
 .obsidian/workspace*.json
 .obsidian/cache/
 .trash/
-/knowledge-vault/
-/knowledge-web/
 /.setup.*/
+# Submodule paths under repos/ are intentionally tracked as gitlinks.
+# Do not ignore repos/salehspace, repos/github-profile,
+# repos/knowledge-vault, repos/knowledge-web, or repos/personal-docs.
+# Pending local-only repos (vault/web/docs without remotes yet) are
+# reported by scripts/status.sh; their file contents must never be
+# added directly to the Saleh-Home history.

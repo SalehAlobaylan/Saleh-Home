@@ -4,7 +4,7 @@
 
 Public exports omit `related` metadata so private note names cannot cross that boundary. Conflicting Quartz URLs (for example `Cache Invalidation.md` and `Cache-Invalidation.md`) stop export before replacing existing output.
 
-`npm run build` runs the exporter, then Quartz only if export succeeds. `npm run export` performs selection alone. The CLI optionally accepts explicit vault and output directories; use a dedicated output directory whose parent exists.
+`npm run knowledge:build` (or `./scripts/build-knowledge.sh`) runs the exporter, then Quartz only if export succeeds. `npm run knowledge:export` performs selection alone. The CLI optionally accepts explicit vault and output directories; use a dedicated output directory whose parent exists. Defaults are `repos/knowledge-vault` → `repos/knowledge-web/content`.
 
 The exporter parses YAML and accepts only exact `visibility: public`. It checks wikilinks and Markdown links against opted-in notes, rejects missing/private/ambiguous targets, symlinks, images, local non-Markdown assets, unsupported URL schemes, and raw HTML. It does not copy `.obsidian`, hidden folders, templates, attachments, or the vault’s Git history. It removes stale notes on successful re-export. Arbitrary output directories are protected by a generated marker file.
 
@@ -26,6 +26,6 @@ Create a separate knowledge-web remote containing the publisher and reviewed exp
 
 Add `knowledge.salehspace.dev` through the Pages custom-domain interface, then follow Cloudflare’s DNS instructions for the zone. Deployment and DNS are preparatory; no site has been deployed. Later add a Knowledge link in SalehSpace as a separate website change.
 
-Publish updates by exporting locally, building, reviewing the content diff, and committing/pushing that public snapshot to knowledge-web. The private vault remains in the nested `knowledge-vault/` repository and its private remote. Prefer this manual boundary until an actual need justifies automation.
+Publish updates by exporting locally, building, reviewing the content diff, and committing/pushing that public snapshot to repos/knowledge-web. The private vault remains in the independent `repos/knowledge-vault` repository and its private remote. Prefer this manual boundary until an actual need justifies automation.
 
-Sources: [Quartz hosting](https://quartz.jzhao.xyz/hosting), [Cloudflare custom domains](https://developers.cloudflare.com/pages/configuration/custom-domains/), and the pinned Quartz source checked out in knowledge-web.
+Sources: [Quartz hosting](https://quartz.jzhao.xyz/hosting), [Cloudflare custom domains](https://developers.cloudflare.com/pages/configuration/custom-domains/), and the pinned Quartz source checked out in repos/knowledge-web.
