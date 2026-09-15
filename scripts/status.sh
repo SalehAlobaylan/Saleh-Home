@@ -14,8 +14,19 @@ for arg in "$@"; do
   esac
 done
 
-if [ "$FETCH" = 1 ]; then
+fetch_all() {
   git -C "$ROOT" fetch --recurse-submodules=no 2>/dev/null || true
+  for SUB in salehspace salehalobaylan knowledge-vault knowledge-web personal-docs; do
+    DIR="$ROOT/repos/$SUB"
+    if [ -d "$DIR/.git" ] || [ -f "$DIR/.git" ]; then
+      git -C "$DIR" fetch --prune 2>/dev/null || \
+        printf '%s\n' "warning: fetch failed for $SUB (offline or unreachable remote); showing last known state." >&2
+    fi
+  done
+}
+
+if [ "$FETCH" = 1 ]; then
+  fetch_all
 fi
 
 printf '%s\n' "Saleh Home"

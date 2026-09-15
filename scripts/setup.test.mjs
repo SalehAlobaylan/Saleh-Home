@@ -56,6 +56,18 @@ test('missing vault stops with instructions and never silently creates one', asy
   await assert.rejects(fs.access(path.join(root, 'repos/knowledge-vault')))
 })
 
+test('vault with submodule-style .git file is accepted as a git repository', async t => {
+  const { root, bin } = await makeRoot(t)
+  await fs.mkdir(path.join(root, 'repos/knowledge-vault'), { recursive: true })
+  await fs.writeFile(path.join(root, 'repos/knowledge-vault/.git'), 'gitdir: ../../.git/modules/repos/knowledge-vault\n')
+  await fs.mkdir(path.join(root, 'repos/knowledge-web/.git'), { recursive: true })
+  for (const file of ['quartz.config.ts', 'quartz.layout.ts', 'package.json', 'package-lock.json']) {
+    await fs.writeFile(path.join(root, 'repos/knowledge-web', file), 'x')
+  }
+  const result = run(root, bin)
+  assert.equal(result.status, 0, result.stderr)
+})
+
 test('interrupted publisher setup is retryable and preserves an existing vault', async t => {
   const { root, bin } = await makeRoot(t)
   await fs.mkdir(path.join(root, 'repos/knowledge-vault/.git'), { recursive: true })

@@ -96,7 +96,7 @@ git push
 ```
 
 Use `./scripts/status.sh` to see every repo's branch and working-tree state,
-and `./scripts/update.sh` for safe fetches (it never touches dirty repos).
+and `./scripts/update.sh` for safe fetches (it never touches dirty repos or detached checkouts).
 
 ## Read next
 

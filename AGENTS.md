@@ -2,8 +2,7 @@
 
 Saleh-Home is the private personal engineering workspace superproject. It is
 the root context for coding agents (`codex`, `claude`, `opencode`). Independent
-personal repositories are mounted under `repos/` as Git submodules (or pending
-submodules awaiting remotes).
+personal repositories are mounted under `repos/` as Git submodules.
 
 ## Repository map
 
@@ -81,7 +80,7 @@ change repository visibility automatically.
 git submodule status --recursive
 ./scripts/status.sh            # local status, all repos
 ./scripts/status.sh --fetch    # include remote check
-./scripts/update.sh            # safe fetch; skips dirty repos
+./scripts/update.sh            # safe fetch + ff-only pulls; skips dirty/detached repos
 ./scripts/setup.sh             # idempotent bootstrap
 npm test                       # export + setup + workspace tests
 npm run knowledge:build        # export public notes + Quartz build

@@ -10,9 +10,9 @@ Saleh-Home (private superproject)
 │
 ├── repos/salehspace       → SalehAlobaylan/salehspace (public website, submodule)
 ├── repos/salehalobaylan     → SalehAlobaylan/SalehAlobaylan (public identity, submodule)
-├── repos/knowledge-vault  → private Obsidian source (independent repo, remote pending)
-├── repos/knowledge-web    → knowledge publisher (independent repo, remote pending)
-└── repos/personal-docs    → private professional docs (independent repo, remote pending)
+├── repos/knowledge-vault  → private Obsidian source (private submodule)
+├── repos/knowledge-web    → knowledge publisher (submodule, private until deployment)
+└── repos/personal-docs    → private professional docs (private submodule)
 ```
 
 All five workspace repositories are registered in `.gitmodules` with real

@@ -96,6 +96,6 @@ update Saleh-Home submodule pointers
 ## Workspace helpers
 
 - `./scripts/status.sh` — local status for every repo (add `--fetch` for remote check)
-- `./scripts/update.sh` — safe fetch/pull; refuses to touch dirty repos
+- `./scripts/update.sh` — safe fetch + fast-forward pulls; skips dirty repos and detached HEADs, initializes missing submodules only
 - `./scripts/setup.sh` — idempotent bootstrap; never overwrites work
 - `npm run knowledge:build` — export + Quartz build

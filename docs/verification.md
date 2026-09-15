@@ -27,9 +27,9 @@ Expected:
 ./scripts/status.sh --fetch
 ```
 
-Expected: each repo listed with branch and clean/modified state; pending
-remotes reported as "no remote configured" or "no personal origin" without
-failure. Local status works without network.
+Expected: each repo listed with branch and clean/modified state. Plain
+`status.sh` is local-only; `--fetch` refreshes every child remote first
+(warning on stderr if one is unreachable) so ahead/behind is current.
 
 ## Tests
 
@@ -83,9 +83,11 @@ npm run knowledge:build
 ```
 
 `setup.sh` is idempotent: re-running preserves existing files, refuses to
-overwrite user work, syncs/initializes registered submodules, bootstraps the
-publisher from pinned Quartz when absent, and stops with instructions when the
-vault is absent (use `--create-vault` only for an explicit new template vault).
+overwrite user work, syncs/initializes missing submodules, attaches each
+submodule to its configured branch when the pinned commit is the branch tip
+(so work does not start detached), bootstraps the publisher from pinned
+Quartz when absent, and stops with instructions when the vault is absent
+(use `--create-vault` only for an explicit new template vault).
 
 ## History preservation
 
