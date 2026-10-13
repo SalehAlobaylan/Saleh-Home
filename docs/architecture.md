@@ -8,7 +8,7 @@ tracks which commit of each repository constitutes the current workspace snapsho
 ```text
 Saleh-Home (private superproject)
 │
-├── repos/salehspace       → SalehAlobaylan/salehspace (public website, submodule)
+├── repos/salehspace       → SalehAlobaylan/SalehSpace (public website, submodule)
 ├── repos/salehalobaylan     → SalehAlobaylan/SalehAlobaylan (public identity, submodule)
 ├── repos/knowledge-vault  → private Obsidian source (private submodule)
 ├── repos/knowledge-web    → knowledge publisher (submodule, private until deployment)

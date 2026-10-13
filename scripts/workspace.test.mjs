@@ -34,7 +34,7 @@ test('repository registry reflects the submodule workspace', async () => {
 
 test('.gitmodules tracks all workspace remotes; .gitignore keeps submodule paths visible', async () => {
   const modules = await fs.readFile(path.join(root, '.gitmodules'), 'utf8')
-  for (const [p, r] of [['repos/salehspace', 'SalehAlobaylan/salehspace'], ['repos/salehalobaylan', 'SalehAlobaylan/SalehAlobaylan'], ['repos/knowledge-vault', 'SalehAlobaylan/knowledge-vault'], ['repos/knowledge-web', 'SalehAlobaylan/knowledge-web'], ['repos/personal-docs', 'SalehAlobaylan/personal-docs']]) {
+  for (const [p, r] of [['repos/salehspace', 'SalehAlobaylan/SalehSpace'], ['repos/salehalobaylan', 'SalehAlobaylan/SalehAlobaylan'], ['repos/knowledge-vault', 'SalehAlobaylan/knowledge-vault'], ['repos/knowledge-web', 'SalehAlobaylan/knowledge-web'], ['repos/personal-docs', 'SalehAlobaylan/personal-docs']]) {
     assert.ok(modules.includes(p), `missing submodule path: ${p}`)
     assert.ok(modules.includes(r), `missing submodule remote: ${r}`)
   }

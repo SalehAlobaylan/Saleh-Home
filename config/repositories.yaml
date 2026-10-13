@@ -13,7 +13,7 @@ repositories:
     note: Private Git superproject. Tracks submodule pointers, workspace docs, and publishing orchestration.
 
   salehspace:
-    repository: SalehAlobaylan/salehspace
+    repository: SalehAlobaylan/SalehSpace
     role: personal-website
     visibility: public
     local_path: repos/salehspace

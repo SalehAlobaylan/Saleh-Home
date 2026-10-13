@@ -8,7 +8,7 @@ personal repositories are mounted under `repos/` as Git submodules.
 
 ```text
 repos/salehspace
-    personal website (SalehAlobaylan/salehspace, public submodule, branch main)
+    personal website (SalehAlobaylan/SalehSpace, public submodule, branch main)
 
 repos/salehalobaylan
     GitHub profile (SalehAlobaylan/SalehAlobaylan, public submodule, branch main)

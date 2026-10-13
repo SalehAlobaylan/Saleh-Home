@@ -1,6 +1,6 @@
 [submodule "repos/salehspace"]
 	path = repos/salehspace
-	url = git@github.com:SalehAlobaylan/salehspace.git
+	url = git@github.com:SalehAlobaylan/SalehSpace.git
 	branch = main
 [submodule "repos/salehalobaylan"]
 	path = repos/salehalobaylan
